@@ -1,0 +1,383 @@
+.health-hub-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  background:
+    radial-gradient(circle at top left, rgba(31, 132, 109, 0.16), transparent 32%),
+    linear-gradient(180deg, #f5fbf8 0%, #eef5ff 100%);
+}
+
+.health-hub-sidebar {
+  padding: 32px 20px;
+  background: rgba(9, 28, 35, 0.94);
+  color: #effaf6;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.hub-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.hub-brand span {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #78d7bd, #e1fbf1);
+  color: #10352d;
+  font-weight: 800;
+}
+
+.hub-brand strong,
+.hub-brand small {
+  display: block;
+}
+
+.hub-brand small {
+  color: rgba(239, 250, 246, 0.72);
+}
+
+.hub-nav {
+  display: grid;
+  gap: 8px;
+}
+
+.hub-nav a {
+  padding: 12px 14px;
+  border-radius: 14px;
+  color: rgba(239, 250, 246, 0.82);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.hub-nav a.active,
+.hub-nav a:hover {
+  background: rgba(120, 215, 189, 0.16);
+  color: #ffffff;
+}
+
+.hub-sidebar-card {
+  margin-top: auto;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hub-sidebar-card p,
+.hub-sidebar-card small {
+  color: rgba(239, 250, 246, 0.72);
+}
+
+.health-hub-content {
+  padding: 28px;
+}
+
+.hub-topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.hub-topbar h1 {
+  font-size: clamp(1.8rem, 2vw, 2.6rem);
+  color: #10221f;
+}
+
+.hub-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  color: #156f5c;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.hub-topbar-actions,
+.hub-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.hub-topbar-actions a,
+.hub-topbar-actions button,
+.hub-form button,
+.hub-card button,
+.ghost-btn {
+  border: 0;
+  border-radius: 14px;
+  padding: 12px 18px;
+  background: #163f37;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ghost-btn {
+  background: rgba(22, 63, 55, 0.08);
+  color: #163f37;
+}
+
+.hub-page {
+  display: grid;
+  gap: 24px;
+}
+
+.hub-page-stack,
+.hub-stack {
+  display: grid;
+  gap: 16px;
+}
+
+.hub-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.summary-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.dashboard-grid,
+.two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hub-card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(16, 34, 31, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: 0 18px 45px rgba(17, 38, 55, 0.08);
+}
+
+.hub-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.hub-card-header span,
+.hub-section-header p,
+.hub-subheading p,
+.hub-empty-state,
+.hub-card small,
+.hub-card p {
+  color: #5e6e73;
+}
+
+.summary-card strong {
+  display: block;
+  font-size: 2rem;
+  margin: 10px 0 6px;
+}
+
+.hub-list,
+.hub-progress-group {
+  display: grid;
+  gap: 14px;
+}
+
+.hub-list-item,
+.profile-row,
+.mini-workout-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(16, 34, 31, 0.08);
+}
+
+.hub-list-item:first-child,
+.profile-row:first-child,
+.mini-workout-item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.hub-list-meta {
+  text-align: right;
+}
+
+.hub-progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.hub-progress-track {
+  height: 10px;
+  border-radius: 999px;
+  background: #e0ebeb;
+  overflow: hidden;
+}
+
+.hub-progress-track div {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #0b6bcb, #55b7f8);
+}
+
+.plan-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.plan-picker button {
+  background: rgba(22, 63, 55, 0.08);
+  color: #163f37;
+}
+
+.plan-picker button.active {
+  background: #163f37;
+  color: #ffffff;
+}
+
+.step-tracker,
+.hub-form {
+  display: grid;
+  gap: 14px;
+}
+
+.step-tracker input,
+.hub-field input {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(16, 34, 31, 0.14);
+  padding: 14px 16px;
+  background: #ffffff;
+  font: inherit;
+}
+
+.hub-field {
+  display: grid;
+  gap: 8px;
+}
+
+.hub-field span {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.water-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.water-grid button {
+  background: rgba(11, 107, 203, 0.08);
+  color: #0b6bcb;
+}
+
+.water-grid button.filled {
+  background: linear-gradient(135deg, #0b6bcb, #55b7f8);
+  color: #ffffff;
+}
+
+.hub-tag {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(21, 111, 92, 0.1);
+  color: #156f5c;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.meal-card span,
+.booking-provider-name,
+.bmi-result strong {
+  display: block;
+  font-size: 1.4rem;
+  color: #10221f;
+  margin: 8px 0;
+}
+
+.bmi-result {
+  margin-top: 16px;
+  border-radius: 18px;
+  padding: 18px;
+  background: rgba(21, 111, 92, 0.08);
+}
+
+.hub-link-card {
+  display: block;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: rgba(22, 63, 55, 0.05);
+  color: #163f37;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.booking-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 16, 23, 0.48);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.booking-modal {
+  width: min(100%, 480px);
+  border-radius: 24px;
+  background: #ffffff;
+  padding: 24px;
+  box-shadow: 0 24px 60px rgba(5, 16, 23, 0.24);
+}
+
+.booking-provider-meta {
+  margin-bottom: 16px;
+}
+
+.hub-subheading {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 1080px) {
+  .health-hub-layout,
+  .summary-grid,
+  .dashboard-grid,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .health-hub-sidebar {
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  .health-hub-content {
+    padding: 18px;
+  }
+
+  .hub-topbar,
+  .hub-section-header,
+  .hub-topbar-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .water-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

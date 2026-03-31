@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "address": "Local Resident",
+        "commentTitle": "Great Service",
+        "commentDescription": "Best service and incredibly clean facilities. Highly recommended!",
+        "rating": 5,
+        "pic": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=200&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 2,
+        "name": "Sarah Miller",
+        "address": "Local Resident",
+        "commentTitle": "A wonderful experience",
+        "commentDescription": "The doctors were so patient and explained everything perfectly.",
+        "rating": 5,
+        "pic": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80"
+    },
+    {
+        "id": 3,
+        "name": "Mr. Xavier",
+        "address": "Out of State",
+        "commentTitle": "Top notch care",
+        "commentDescription": "Traveled from out of state just to get treated here. Worth it.",
+        "rating": 5,
+        "pic": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80"
+    }
+]

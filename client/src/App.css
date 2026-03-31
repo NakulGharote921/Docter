@@ -1,0 +1,15 @@
+main {
+  min-height: 70vh;
+}
+
+.wellness-main {
+  min-height: 100vh;
+}
+
+.route-loader {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  color: #163f37;
+}

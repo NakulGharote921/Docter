@@ -1,0 +1,332 @@
+.profile-shell {
+  padding: 2.25rem 0 3.5rem;
+  background:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.1), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.08), transparent 24%);
+}
+
+.profile-header {
+  margin-bottom: 1.6rem;
+}
+
+.profile-eyebrow {
+  margin: 0 0 0.45rem;
+  color: #0f766e;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.profile-header h2 {
+  margin: 0 0 0.5rem;
+  color: #0f172a;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.profile-header p:last-child {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 320px) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.profile-sidebar-card,
+.profile-main-card {
+  border: 1px solid #d8ece8;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ffffff 0%, #f6fbfb 100%);
+  box-shadow: 0 24px 60px rgba(15, 118, 110, 0.08);
+}
+
+.profile-sidebar-card {
+  padding: 1.6rem;
+  text-align: center;
+}
+
+.profile-avatar-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.profile-avatar {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 28px;
+  border: 5px solid #ffffff;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+}
+
+.profile-sidebar-card h3 {
+  margin: 0 0 0.35rem;
+  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.profile-sidebar-card p {
+  margin: 0;
+  color: #64748b;
+  word-break: break-word;
+}
+
+.profile-status-pill {
+  margin: 1rem auto 1.15rem;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #166534;
+  font-weight: 700;
+}
+
+.profile-quick-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.profile-stat-box {
+  padding: 0.9rem;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.profile-stat-box span {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #64748b;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.profile-stat-box strong {
+  color: #0f172a;
+}
+
+.profile-main-card {
+  padding: 1.6rem;
+}
+
+.profile-card-top {
+  margin-bottom: 1.2rem;
+}
+
+.profile-card-top h4 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.profile-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.profile-info-card {
+  padding: 1rem 1.05rem;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid #e2efee;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.profile-info-highlight {
+  background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+  color: #ffffff;
+  border: none;
+}
+
+.profile-info-highlight .profile-info-label,
+.profile-info-highlight p,
+.profile-info-highlight strong {
+  color: #ffffff;
+}
+
+.profile-info-label {
+  color: #64748b;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.profile-info-card strong {
+  color: #0f172a;
+  font-size: 1.08rem;
+}
+
+.profile-info-card p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.profile-info-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #e6f7f4;
+  color: #0f766e;
+  margin-bottom: 0.15rem;
+}
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.35rem;
+}
+
+.profile-live-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.profile-live-card {
+  padding: 1rem 1.05rem;
+  border-radius: 22px;
+  background: #f8fbff;
+  border: 1px solid #dce8f6;
+}
+
+.profile-live-label {
+  margin: 0 0 0.4rem;
+  color: #2563eb;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.profile-live-card h5 {
+  margin: 0 0 0.35rem;
+  color: #0f172a;
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.profile-live-card p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.profile-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.2rem;
+  border: none;
+  border-radius: 16px;
+  font-weight: 800;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.profile-btn:hover {
+  transform: translateY(-1px);
+}
+
+.profile-btn-edit {
+  background: #facc15;
+  color: #111827;
+  box-shadow: 0 14px 30px rgba(250, 204, 21, 0.25);
+}
+
+.profile-btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  color: #ffffff;
+  box-shadow: 0 14px 30px rgba(59, 130, 246, 0.2);
+}
+
+.profile-btn-danger {
+  background: linear-gradient(135deg, #ef4444 0%, #f43f5e 100%);
+  color: #ffffff;
+  box-shadow: 0 14px 30px rgba(244, 63, 94, 0.18);
+}
+
+.editModal .modal-content {
+  border: 1px solid #d8ece8;
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(15, 118, 110, 0.18);
+}
+
+.editModal .modal-header,
+.editModal .modal-footer {
+  border-color: #e5efee;
+}
+
+.editModal .modal-title {
+  color: #0f172a;
+  font-weight: 800;
+}
+
+.editModal input {
+  padding: 0.8rem 0.95rem;
+  margin: 0;
+  border-radius: 14px;
+  border: 1px solid #d5e3e8;
+}
+
+.editModal input:focus,
+.editModal select:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.12);
+}
+
+.editModal select {
+  width: 100%;
+  text-align: center;
+  border-radius: 14px;
+  border: 1px solid #d5e3e8;
+}
+
+@media (max-width: 991px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .profile-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-live-section {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .profile-btn {
+    width: 100%;
+  }
+}

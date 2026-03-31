@@ -1,0 +1,44 @@
+.why-section {
+  padding: 2rem 0 3rem;
+}
+
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.why-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #dcefed;
+  padding: 1.5rem;
+  border-radius: 26px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fcff 100%);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+}
+
+.why-card img {
+  margin-bottom: 1rem;
+}
+
+.why-card h2 {
+  text-align: left;
+  font-weight: 800;
+  font-size: 1.35rem;
+  margin: 0 0 0.7rem;
+  color: #0f172a;
+}
+
+.why-card p {
+  color: #64748b;
+  line-height: 1.75;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .why-container {
+    grid-template-columns: 1fr;
+  }
+}
