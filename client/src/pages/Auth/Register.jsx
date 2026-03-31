@@ -8,6 +8,7 @@ import {
 import toast from "react-hot-toast";
 import { NavLink, useNavigate } from "react-router";
 import { auth } from "../../firebase";
+import { getFirebaseAuthErrorMessage } from "../../utils/firebaseAuthErrors";
 import "./Auth.css";
 
 const Register = () => {
@@ -38,7 +39,7 @@ const Register = () => {
       setPassword("");
     } catch (error) {
       console.log(error);
-      toast.error(error.message || "Registration failed");
+      toast.error(getFirebaseAuthErrorMessage(error));
     }
   };
 
@@ -50,7 +51,7 @@ const Register = () => {
       navigate("/wellness/profile");
     } catch (error) {
       console.log(error);
-      toast.error(error.message || "Google sign up failed");
+      toast.error(getFirebaseAuthErrorMessage(error));
     }
   };
 

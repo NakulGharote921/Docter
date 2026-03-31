@@ -7,6 +7,7 @@ import {
 import toast from "react-hot-toast";
 import { NavLink, useNavigate } from "react-router";
 import { auth } from "../../firebase";
+import { getFirebaseAuthErrorMessage } from "../../utils/firebaseAuthErrors";
 import "./Auth.css";
 
 const Login = () => {
@@ -30,7 +31,7 @@ const Login = () => {
       setPassword("");
     } catch (error) {
       console.log(error);
-      toast.error(error.message || "Login failed");
+      toast.error(getFirebaseAuthErrorMessage(error));
     }
   };
 
@@ -42,7 +43,7 @@ const Login = () => {
       navigate("/wellness");
     } catch (error) {
       console.log(error);
-      toast.error(error.message || "Google login failed");
+      toast.error(getFirebaseAuthErrorMessage(error));
     }
   };
 
